@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Calculator 💘</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffe0ec;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #d63384;
+    }
+    input {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #d63384;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #c2185b;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>💕 Love Calculator 💕</h1>
+  <p>Find your love percentage</p>
+
+  <input type="text" id="yourName" placeholder="Your name">
+  <input type="text" id="crushName" placeholder="Crush's name">
+  <br>
+  <button onclick="calculateLove()">Calculate 💘</button>
+
+  <div id="result"></div>
+
+  <script>
+    function calculateLove() {
+      const yourName = document.getElementById("yourName").value;
+      const crushName = document.getElementById("crushName").value;
+      if (!yourName || !crushName) {
+        alert("Please enter both names!");
+        return;
+      }
+
+      const loveScore = Math.floor(Math.random() * 100) + 1;
+      document.getElementById("result").innerHTML =
+        `<strong>${yourName}</strong> ❤️ <strong>${crushName}</strong><br>Love Score: <span style="color:#e91e63;">${loveScore}%</span>`;
+    }
+  </script>
+</body>
+</html>
