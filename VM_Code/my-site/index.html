@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AstroGuru - Your Personal Astrologer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f3f1e7;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #ffb347, #ffcc33);
+      color: #000;
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .services, .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      flex: 1 1 250px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #ffb347;
+      color: black;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AstroGuru</h1>
+  <p>Your Guide to the Stars ✨</p>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>Hello! I’m Pandit Puneet, a professional astrologer with over 20 years of experience in Vedic astrology, numerology, and palmistry. I’ve helped thousands of people find clarity in their personal and professional lives. 🌙</p>
+</section>
+
+<section>
+  <h2>Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>🪔 Kundli Analysis</h3>
+      <p>Get a detailed analysis of your birth chart and understand the planets' influence on your life.</p>
+    </div>
+    <div class="card">
+      <h3>💘 Matchmaking</h3>
+      <p>Perfect match-making based on astrology for love or arranged marriages.</p>
+    </div>
+    <div class="card">
+      <h3>📈 Career Guidance</h3>
+      <p>Confused about your career? I’ll help you choose the right path with astrological insights.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact Me</h2>
+  <form class="contact">
+    <div class="card" style="flex: 1 1 100%;">
+      <label>Name:</label>
+      <input type="text" placeholder="Your Name" required>
+
+      <label>Email:</label>
+      <input type="email" placeholder="Your Email" required>
+
+      <label>Message:</label>
+      <textarea rows="5" placeholder="Ask your question..."></textarea>
+
+      <button type="submit">Send Message</button>
+    </div>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 AstroGuru | All rights reserved</p>
+</footer>
+
+</body>
+</html>
